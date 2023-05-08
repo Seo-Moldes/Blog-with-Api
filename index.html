@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js" defer></script>
+    <script src="https://unpkg.com/@popperjs/core@2" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>    
+    <script src="https://kit.fontawesome.com/d9005a0d59.js" crossorigin="anonymous" defer></script>
+    <script src="./jsfiles/main.js" defer></script>
+    <title>Blog with API</title>
+</head>
+<body id="body">
+  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="modalMainBody" class="modal-body">
+            <p class="lead" id="modalBody"></p>
+            <p><b id="user"></b></p>
+            <p id="userName">Sampleuser123</p>
+            <p id="userEmail">sample@email.com</p>
+            <button id="loadCommentsBtn" type="button" class="btn btn-dark">Load Comments</button>
+            <hr>
+            <div id="commentSection" class="row">
+                <div class="row">
+                    <p id="commentsName"></p>
+                    <p id="commentsEmail"></p>
+                    <p id="comment"></p>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer d-md-block">
+            <button type="button" class="btn btn-secondary m-0" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="modal fade" id="editorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalEditTitle">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p class="lead" id="editPost">Edit post</p>
+            <form>
+                <div class="form-group m-1">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control mt-3 mb-2" id="changeTitle" placeholder="Post title">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer mx-auto">
+            <button id="saveChangesBtn" type="button" class="btn btn-dark m-0" data-bs-dismiss="modal">Save Changes</button>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="container border bg-light">
+  <div class="row justify-content-center my-3 bg-info border gx-1">
+    <header class="bg-success">
+        <div class="col text-center">
+            <h1 class="display-6">Blog with API</h1>
+        </div>
+    </header>
+    </div>
+    <div class="row justify-content-center my-5">
+        <main>
+        <div id="mainPosts" class="col">
+            <div id="postsBody" class="row justify-content-center align-items-flex-center">
+                
+            </div>
+        </div>
+    </main>
+    </div>
+</div>
+   
+</body>
+</html>
